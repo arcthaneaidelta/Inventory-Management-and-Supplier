@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Oatmeal Merino Knit Sweater">
+  <defs>
+    <radialGradient id="studioGlow" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F0F2ED" stop-opacity="1"/>
+    </radialGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#26352F" flood-opacity="0.11"/>
+    </filter>
+    <pattern id="weave" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 4 H8 M4 0 V8" stroke="#000000" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="#F0F2ED"/>
+  <rect width="800" height="800" fill="url(#studioGlow)"/>
+  <ellipse cx="400" cy="685" rx="210" ry="22" fill="#26352F" fill-opacity="0.07"/>
+  
+    <g filter="url(#softShadow)">
+      <path d="M240 190 L118 355 L168 395 L265 275 Z" fill="#DDD4C5" stroke="#C4B9A6" stroke-width="2"/>
+      <path d="M560 190 L682 355 L632 395 L535 275 Z" fill="#DDD4C5" stroke="#C4B9A6" stroke-width="2"/>
+      <path d="M248 175 C305 155 495 155 552 175 L562 605 L238 605 Z" fill="#E4DCCE" stroke="#C4B9A6" stroke-width="2"/>
+      <!-- Ribbed knit lines -->
+      <path d="M250 568 H550 M265 180 C340 228 460 228 535 180" stroke="#BFB39E" stroke-width="3"/>
+      <path d="M335 170 C355 215 445 215 465 170 C445 148 355 148 335 170 Z" fill="#C9BEAB" stroke="#B4A792" stroke-width="2"/>
+      <g stroke="#CFC5B4" stroke-width="1.5" stroke-opacity="0.55">
+        <line x1="265" y1="220" x2="265" y2="565"/><line x1="305" y1="220" x2="305" y2="565"/>
+        <line x1="345" y1="220" x2="345" y2="565"/><line x1="385" y1="220" x2="385" y2="565"/>
+        <line x1="425" y1="220" x2="425" y2="565"/><line x1="465" y1="220" x2="465" y2="565"/>
+        <line x1="505" y1="220" x2="505" y2="565"/><line x1="535" y1="220" x2="535" y2="565"/>
+      </g>
+      <rect x="238" y="568" width="324" height="38" rx="4" fill="#D5CCB9"/>
+    </g>
+</svg>

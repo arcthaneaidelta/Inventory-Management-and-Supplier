@@ -1,0 +1,77 @@
+import { PricingRule, SupplierPriceChangeAlert } from '../types';
+
+export const SEED_PRICING_RULES: PricingRule[] = [
+  {
+    id: 'rule-apparel',
+    name: 'Apparel Standard Margin',
+    category: 'Apparel',
+    targetMargin: 0.45,
+    defaultFreight: 4.0,
+    defaultDuty: 3.0,
+    roundingRule: 'None',
+    active: true,
+  },
+  {
+    id: 'rule-shoes',
+    name: 'Footwear Freight & Margin',
+    category: 'Shoes',
+    targetMargin: 0.40,
+    defaultFreight: 6.0,
+    defaultDuty: 4.0,
+    roundingRule: 'None',
+    active: true,
+  },
+  {
+    id: 'rule-accessories',
+    name: 'Accessories High-Margin Rule',
+    category: 'Accessories',
+    targetMargin: 0.50,
+    defaultFreight: 3.5,
+    defaultDuty: 2.5,
+    roundingRule: 'None',
+    active: true,
+  },
+];
+
+export const SEED_PRICE_ALERTS: SupplierPriceChangeAlert[] = [
+  {
+    id: 'pa-1',
+    productId: 'prod-01',
+    sku: 'MF-204',
+    productName: 'Classic Linen Shirt',
+    supplierId: 'sup-milano',
+    supplierName: 'Milano Fashion',
+    currency: 'EUR',
+    previousCost: 25.0,
+    newCost: 29.0,
+    detectedAt: '2026-11-09 14:20',
+    status: 'Pending',
+  },
+  {
+    id: 'pa-2',
+    productId: 'prod-05',
+    sku: 'PF-112',
+    productName: 'Everyday Canvas Sneakers',
+    supplierId: 'sup-porto',
+    supplierName: 'Porto Footwear Guild',
+    currency: 'EUR',
+    previousCost: 30.0,
+    newCost: 33.0,
+    detectedAt: '2026-11-08 09:45',
+    status: 'Pending',
+  },
+  {
+    id: 'pa-3',
+    productId: 'prod-11',
+    sku: 'IT-308',
+    productName: 'Structured Fleece Zip Jacket',
+    supplierId: 'sup-istanbul',
+    supplierName: 'Istanbul Textile House',
+    currency: 'TRY',
+    previousCost: 920.0,
+    newCost: 1040.0,
+    detectedAt: '2026-11-07 16:10',
+    status: 'Pending',
+  },
+];
+

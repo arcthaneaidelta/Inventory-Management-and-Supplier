@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Deep Forest Pique Polo Shirt">
+  <defs>
+    <radialGradient id="studioGlow" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F3EFE7" stop-opacity="1"/>
+    </radialGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#26352F" flood-opacity="0.11"/>
+    </filter>
+    <pattern id="weave" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 4 H8 M4 0 V8" stroke="#000000" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="#F3EFE7"/>
+  <rect width="800" height="800" fill="url(#studioGlow)"/>
+  <ellipse cx="400" cy="685" rx="210" ry="22" fill="#26352F" fill-opacity="0.07"/>
+  
+    <g filter="url(#softShadow)">
+      <path d="M240 205 L145 300 L205 345 L265 280 Z" fill="#364F3E"/>
+      <path d="M560 205 L655 300 L595 345 L535 280 Z" fill="#364F3E"/>
+      <path d="M250 185 L550 185 L542 625 L258 625 Z" fill="#3D5947"/>
+      <path d="M250 185 L550 185 L542 625 L258 625 Z" fill="url(#weave)"/>
+      <!-- Placket -->
+      <rect x="384" y="210" width="32" height="125" rx="3" fill="#314939"/>
+      <circle cx="400" cy="245" r="5" fill="#E5E1D6"/>
+      <circle cx="400" cy="285" r="5" fill="#E5E1D6"/>
+      <!-- Knit collar -->
+      <path d="M325 182 L400 220 L475 182 L442 155 L358 155 Z" fill="#2E4436"/>
+      <path d="M342 175 L400 218 L355 230 Z" fill="#466651"/>
+      <path d="M458 175 L400 218 L445 230 Z" fill="#466651"/>
+    </g>
+</svg>

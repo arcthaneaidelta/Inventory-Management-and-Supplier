@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Mediterranean Poplin Tunic">
+  <defs>
+    <radialGradient id="studioGlow" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F3EFE7" stop-opacity="1"/>
+    </radialGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#26352F" flood-opacity="0.11"/>
+    </filter>
+    <pattern id="weave" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 4 H8 M4 0 V8" stroke="#000000" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="#F3EFE7"/>
+  <rect width="800" height="800" fill="url(#studioGlow)"/>
+  <ellipse cx="400" cy="685" rx="210" ry="22" fill="#26352F" fill-opacity="0.07"/>
+  
+    <g filter="url(#softShadow)">
+      <path d="M250 180 L150 385 L205 408 L268 270 Z" fill="#F2F4F0" stroke="#D7DDD4" stroke-width="2"/>
+      <path d="M550 180 L650 385 L595 408 L532 270 Z" fill="#F2F4F0" stroke="#D7DDD4" stroke-width="2"/>
+      <path d="M255 168 L545 168 L560 630 C490 645 310 645 240 630 Z" fill="#FAFBF9" stroke="#D7DDD4" stroke-width="2"/>
+      <path d="M350 168 L400 285 L450 168" fill="none" stroke="#CBD4C9" stroke-width="3"/>
+      <line x1="400" y1="285" x2="400" y2="640" stroke="#E0E5DE" stroke-width="2"/>
+    </g>
+</svg>

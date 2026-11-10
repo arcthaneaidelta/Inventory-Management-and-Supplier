@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Washed Indigo Relaxed Denim">
+  <defs>
+    <radialGradient id="studioGlow" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F3EFE7" stop-opacity="1"/>
+    </radialGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#26352F" flood-opacity="0.11"/>
+    </filter>
+    <pattern id="weave" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 4 H8 M4 0 V8" stroke="#000000" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="#F3EFE7"/>
+  <rect width="800" height="800" fill="url(#studioGlow)"/>
+  <ellipse cx="400" cy="685" rx="210" ry="22" fill="#26352F" fill-opacity="0.07"/>
+  
+    <g filter="url(#softShadow)">
+      <!-- Waistband -->
+      <path d="M275 130 L525 130 L535 175 L265 175 Z" fill="#3E566E"/>
+      <!-- Legs -->
+      <path d="M265 175 L535 175 L568 655 L445 660 L400 355 L355 660 L232 655 Z" fill="#4B6682" stroke="#374D63" stroke-width="2"/>
+      <path d="M265 175 L535 175 L568 655 L445 660 L400 355 L355 660 L232 655 Z" fill="url(#weave)"/>
+      <!-- Contrast stitching & pockets -->
+      <path d="M272 175 C272 225 310 245 340 245 M528 175 C528 225 490 245 460 245" fill="none" stroke="#C89B62" stroke-width="2.5" stroke-dasharray="4 3"/>
+      <path d="M400 175 V290 C400 302 390 310 378 310" fill="none" stroke="#C89B62" stroke-width="2.5"/>
+      <!-- Brass button & belt loops -->
+      <circle cx="400" cy="152" r="9" fill="#B8935A" stroke="#8C6C3B" stroke-width="2"/>
+      <rect x="305" y="130" width="12" height="45" fill="#395066"/>
+      <rect x="483" y="130" width="12" height="45" fill="#395066"/>
+    </g>
+</svg>

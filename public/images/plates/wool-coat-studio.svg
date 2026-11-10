@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Charcoal Double-Breasted Wool Coat">
+  <defs>
+    <radialGradient id="studioGlow" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F0F2ED" stop-opacity="1"/>
+    </radialGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#26352F" flood-opacity="0.11"/>
+    </filter>
+    <pattern id="weave" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 4 H8 M4 0 V8" stroke="#000000" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="#F0F2ED"/>
+  <rect width="800" height="800" fill="url(#studioGlow)"/>
+  <ellipse cx="400" cy="685" rx="210" ry="22" fill="#26352F" fill-opacity="0.07"/>
+  
+    <g filter="url(#softShadow)">
+      <path d="M235 170 L135 450 L195 470 L268 280 Z" fill="#464542"/>
+      <path d="M565 170 L665 450 L605 470 L532 280 Z" fill="#464542"/>
+      <path d="M245 150 L555 150 L578 675 L222 675 Z" fill="#4F4D49" stroke="#393835" stroke-width="2"/>
+      <!-- Lapels -->
+      <path d="M350 150 L400 295 L320 260 Z" fill="#3E3C39"/>
+      <path d="M450 150 L400 295 L480 260 Z" fill="#3E3C39"/>
+      <!-- Double-breasted horn buttons -->
+      <circle cx="365" cy="340" r="8" fill="#2A2724"/><circle cx="435" cy="340" r="8" fill="#2A2724"/>
+      <circle cx="365" cy="405" r="8" fill="#2A2724"/><circle cx="435" cy="405" r="8" fill="#2A2724"/>
+      <circle cx="365" cy="470" r="8" fill="#2A2724"/><circle cx="435" cy="470" r="8" fill="#2A2724"/>
+      <line x1="400" y1="295" x2="400" y2="675" stroke="#3A3835" stroke-width="2"/>
+    </g>
+</svg>

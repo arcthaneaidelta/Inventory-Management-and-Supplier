@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --sf-bg: #F7F8F5;
+    --sf-surface: #FFFFFF;
+    --sf-secondary: #F0F2ED;
+    --sf-text: #26352F;
+    --sf-text-secondary: #78837C;
+    --sf-muted: #9AA39C;
+    --sf-green: #526D5B;
+    --sf-forest: #344D3D;
+    --sf-green-soft: #E9F0E9;
+    --sf-border: #E6EAE4;
+    --sf-beige: #F3EFE7;
+    --sf-amber: #B58A4B;
+    --sf-red: #C47770;
+    --sf-blue: #7895A5;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #F7F8F5;
+    color: #26352F;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'DM Sans', 'Inter', system-ui, sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom calm scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D6DCD4;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B8C2B5;
+}
+
+/* Subtle hero catalog grid drift (GPU transform only, honors reduced motion) */
+@keyframes sf-slow-drift {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@keyframes sf-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.sf-animate-drift {
+  animation: sf-slow-drift 9s ease-in-out infinite;
+}
+
+.sf-page-enter {
+  animation: sf-fade-up 180ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .sf-animate-drift,
+  .sf-page-enter {
+    animation: none !important;
+    transform: none !important;
+  }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+

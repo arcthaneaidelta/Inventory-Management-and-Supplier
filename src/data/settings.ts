@@ -1,0 +1,30 @@
+import { WorkspaceSettings } from '../types';
+
+export const SEED_SETTINGS: WorkspaceSettings = {
+  workspaceName: 'SUPPLYFLOW • Jack Operations',
+  ownerName: 'Jack',
+  defaultLanguage: 'English',
+  baseCurrency: 'USD',
+  timeZone: 'America/New_York (EST)',
+  supportedCurrencies: ['USD', 'EUR', 'GBP', 'TRY', 'CNY'],
+  defaultSubmissionMethod: 'Messaging',
+  defaultFreight: 4.0,
+  defaultDuty: 3.0,
+  defaultMargin: 0.45,
+  roundingRule: 'None',
+  lowStockThreshold: 5,
+  priceFreshnessDays: 14,
+  stockFreshnessDays: 14,
+  imageFreshnessDays: 30,
+  defaultPhotographyStyle: 'Premium catalog',
+  defaultDescriptionLanguage: 'Bilingual (EN + ES)',
+  translationLanguages: ['English', 'Spanish'],
+  autoExtraction: true,
+  autoPricingCalculation: true,
+  requireManualApproval: true,
+  notifyOnIntake: true,
+  notifyOnPriceChange: true,
+  notifyOnLowStock: true,
+  notifyOnApprovalReady: true,
+};
+

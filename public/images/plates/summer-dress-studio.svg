@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-label="Womens Sand Linen Summer Dress">
+  <defs>
+    <radialGradient id="studioGlow" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F3EFE7" stop-opacity="1"/>
+    </radialGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#26352F" flood-opacity="0.11"/>
+    </filter>
+    <pattern id="weave" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M0 4 H8 M4 0 V8" stroke="#000000" stroke-opacity="0.035" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="800" fill="#F3EFE7"/>
+  <rect width="800" height="800" fill="url(#studioGlow)"/>
+  <ellipse cx="400" cy="685" rx="210" ry="22" fill="#26352F" fill-opacity="0.07"/>
+  
+    <g filter="url(#softShadow)">
+      <!-- Straps -->
+      <rect x="315" y="110" width="18" height="90" rx="6" fill="#DDD2BE"/>
+      <rect x="467" y="110" width="18" height="90" rx="6" fill="#DDD2BE"/>
+      <!-- Bodice -->
+      <path d="M305 190 C340 212 460 212 495 190 L510 335 L290 335 Z" fill="#E6DCCB" stroke="#CFC2AC" stroke-width="2"/>
+      <!-- Waist seam -->
+      <rect x="290" y="328" width="220" height="14" fill="#D8CCB7"/>
+      <!-- Flowing midi skirt -->
+      <path d="M290 342 L510 342 L595 660 C530 680 270 680 205 660 Z" fill="#E6DCCB" stroke="#CFC2AC" stroke-width="2"/>
+      <path d="M290 342 L510 342 L595 660 C530 680 270 680 205 660 Z" fill="url(#weave)"/>
+      <!-- Drape pleats -->
+      <path d="M345 342 L315 668 M400 342 L400 675 M455 342 L485 668" stroke="#CBBCA4" stroke-width="2" stroke-opacity="0.65"/>
+      <!-- Side seam & neck tag -->
+      <rect x="380" y="198" width="40" height="14" rx="2" fill="#F9F7F2"/>
+    </g>
+</svg>
